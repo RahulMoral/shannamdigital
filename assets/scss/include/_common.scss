@@ -1,0 +1,50 @@
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+*{
+	-webkit-tap-highlight-color: transparent;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: white;
+	color: black;
+	font-size: 16px;
+	@include font-DM-Sans-Regular;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+}
+a,
+button{
+	outline: none;
+	text-decoration: none;
+	&:hover,
+	&:focus{
+		outline: none;
+		text-decoration: none;
+	}
+}
+.page-wrapper{
+	display: flex;
+	flex-direction: column;
+	max-height: 100vh;
+	.site-footer{
+		margin-top: auto;
+	}
+}
+.container{
+	max-width: 1296px;
+	padding: 0 20px;
+	width: 100%;
+}

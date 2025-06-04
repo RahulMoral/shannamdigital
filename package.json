@@ -1,0 +1,38 @@
+{
+  "name": "shannamdigital",
+  "version": "1.0.0",
+  "description": "Create HTML/CSS/JS/Boostrap Project.",
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Bootstrap",
+    "SCSS"
+  ],
+  "homepage": "https://github.com/RahulMoral/shannamdigital#readme",
+  "bugs": {
+    "url": "https://github.com/RahulMoral/shannamdigital/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahulMoral/shannamdigital.git"
+  },
+  "license": "MIT",
+  "author": "Rahul Moral",
+  "type": "commonjs",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "bootstrap": "^5.3.6",
+    "browser-sync": "^3.0.4",
+    "browserslist": "^4.24.5",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "postcss": "^8.5.3",
+    "sass": "^1.79.6"
+  }
+}
