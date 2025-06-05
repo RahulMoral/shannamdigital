@@ -48,3 +48,51 @@ button{
 	padding: 0 20px;
 	width: 100%;
 }
+
+.inner-banner{
+	position: relative;
+	&:before{
+		background-color: rgba(0, 0, 0, 0.65);
+		content: "";
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	.inner-banner-container{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 452px;
+		justify-content: center;
+		position: relative;
+		row-gap: 20px;
+		z-index: 1;
+		h1{
+			color: white;
+			font-size: 65px;
+			@include font-Jost-Bold;
+			line-height: calc(75 / 65);
+			margin-bottom: 0;
+		}
+		.list-unstyled{
+			gap: 22px;
+			li{
+				color: white;
+				font-size: 18px;
+				@include font-Jost-Medium;
+				line-height: calc(28 / 18);
+				a{
+					color: white;
+					transition: all 0.3s ease-in-out 0s;
+					&:hover,
+					&:focus{
+						color: #2A9D8F;
+					}
+				}
+			}
+		}
+	}
+}
