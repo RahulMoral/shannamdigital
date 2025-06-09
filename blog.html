@@ -238,15 +238,15 @@
                     <img alt="parallax image" class="jarallax-img" src="assets/images/home/banner-image-shannamdigtial.jpg" />
                     <div class="container">
                         <div class="inner-banner-container">
-                            <h1>Shannam Digital Inc. Blogs</h1>
+                            <h1 class="wow img-custom-anim-right">Shannam Digital Inc. Blogs</h1>
                             <ul class="list-unstyled d-flex align-items-center justify-content-center gap-3">
-                                <li>
+                                <li class="wow img-custom-anim-left">
                                     <a href="javascript:void(0);">Home</a>
                                 </li>
-                                <li>
+                                <li class="wow img-custom-anim-left">
                                     <i class="fa-light fa-angle-right"></i>
                                 </li>
-                                <li>Blog</li>
+                                <li class="wow img-custom-anim-left">Blog</li>
                             </ul>
                         </div>
                     </div>
@@ -259,14 +259,14 @@
                     <div class="container">
                         <div class="main-footer-top">
                             <div class="main-footer-top-contact-info">
-                                <div class="main-footer-top-contact-info-logo">
+                                <div class="main-footer-top-contact-info-logo wow img-custom-anim-left">
                                     <a href="javascript:void(0);">
                                         <img alt="Shannam Digital Inc" class="img-fluid d-block" src="assets/images/ShannamDigitalLogo.png" />
                                     </a>
                                 </div>
                                 <!-- Footer logo -->
-                                <p>We level the playing field—helping small businesses outsmart their competition without needing to outspend them.</p>
-                                <ul class="main-footer-top-contact-info-location d-flex flex-column">
+                                <p class="wow img-custom-anim-left">We level the playing field—helping small businesses outsmart their competition without needing to outspend them.</p>
+                                <ul class="main-footer-top-contact-info-location d-flex flex-column wow img-custom-anim-left">
                                     <li class="main-footer-top-contact-info-location-item">
                                         <span class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
@@ -302,8 +302,8 @@
                             </div>
                             <div class="main-footer-top-menu">
                                 <div class="main-footer-top-menu-card">
-                                    <h5>What We Offer</h5>
-                                    <ul class="footer-menu d-flex flex-column">
+                                    <h5 class="wow img-custom-anim-top">What We Offer</h5>
+                                    <ul class="footer-menu d-flex flex-column wow img-custom-anim-right">
                                         <li class="footer-menu-item">
                                             <a class="footer-menu-link" href="javascript:void(0);">Website Development</a>
                                         </li>
@@ -332,8 +332,8 @@
                                 </div>
                                 <!-- Each item -->
                                 <div class="main-footer-top-menu-card">
-                                    <h5>Resources</h5>
-                                    <ul class="footer-menu d-flex flex-column">
+                                    <h5 class="wow img-custom-anim-left">Resources</h5>
+                                    <ul class="footer-menu d-flex flex-column wow img-custom-anim-right">
                                         <li class="footer-menu-item">
                                             <a class="footer-menu-link" href="javascript:void(0);">Portfolio</a>
                                         </li>
@@ -355,8 +355,8 @@
                                 <!-- Each item -->
                             </div>
                             <div class="main-footer-top-news-letter">
-                                <h5>Newsletter</h5>
-                                <div class="main-footer-top-news-letter-wrapper">
+                                <h5 class="wow img-custom-anim-right">Newsletter</h5>
+                                <div class="main-footer-top-news-letter-wrapper wow img-custom-anim-top">
                                     <form action="" method="post">
                                         <input type="email" placeholder="Enter Email Address" />
                                         <button type="submit">
@@ -386,8 +386,8 @@
                         </div>
                         <!-- Main footer top -->
                         <div class="main-footer-bottom d-flex align-items-center justify-content-between">
-                            <p><span>&copy; 2025</span> Shannam Digital Inc. All Rights Reserved.</p>
-                            <ul class="social-menu d-flex align-items-center">
+                            <p class="wow img-custom-anim-right"><span>&copy; 2025</span> Shannam Digital Inc. All Rights Reserved.</p>
+                            <ul class="social-menu d-flex align-items-center wow img-custom-anim-top">
                                 <li class="social-menu-item">
                                     <a class="social-menu-link" href="javascript:void(0);">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -401,7 +401,7 @@
                                 </li>
                                 <!-- Each item -->
                             </ul>
-                            <ul class="legal-menu d-flex align-items-center">
+                            <ul class="legal-menu d-flex align-items-center wow img-custom-anim-left">
                                 <li class="legal-menu-item">
                                     <a class="legal-menu-link" href="javascript:void(0);">Privacy Policy</a>
                                 </li>
@@ -415,6 +415,7 @@
         </div>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+        <script src="assets/js/wow.js"></script>
         <script>
 			// scroll to active sticky menu
 			window.addEventListener('scroll', function () {
@@ -462,6 +463,9 @@
 			jarallax(document.querySelectorAll('.jarallax'), {
 				speed: 0.4,
 			});
+        </script>
+        <script>
+			new WOW().init();
         </script>
     </body>
 </html>
