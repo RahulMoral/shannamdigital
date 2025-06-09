@@ -1,0 +1,59 @@
+.seo-three-cards{
+	background-color: #F6F9FA;
+	padding: 100px 0;
+	.seo-three-cards-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: center;
+		@include media-breakpoint-down(xl){
+			gap: 20px;
+		}
+		@include media-breakpoint-down(lg){
+			gap: 1rem;
+		}
+		.seo-three-cards-item{
+			background-color: white;
+			border: 1px solid #eeeeee;
+			border-radius: 4px;
+			box-shadow: 0 7px 32px 0 rgba(0, 0, 0, 0.08);
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			row-gap: 1rem;
+			flex: 0 0 calc(50% - 15px);
+			max-width: calc(50% - 15px);
+			@include media-breakpoint-down(md){
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			&:first-of-type{
+				flex: 0 0 65%;
+				max-width: 65%;
+				@include media-breakpoint-down(md){
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+			}
+			h3{
+				color: #062E39;
+				font-size: 26px;
+				@include font-Jost-Bold;
+				line-height: calc(36 / 26);
+				margin-bottom: 0;
+				text-align: center;
+				@include media-breakpoint-down(lg){
+					font-size: 24px;
+				}
+			}
+			p{
+				color: #747474;
+				font-size: 16px;
+				@include font-DM-Sans-Regular;
+				line-height: 1.5;
+				margin-bottom: 0;
+				text-align: center;
+			}
+		}
+	}
+}
