@@ -40,20 +40,44 @@
 				flex-wrap: wrap;
 				justify-content: center;
 				padding-bottom: 50px;
+				@include media-breakpoint-down(lg){
+					column-gap: 50px;
+				}
+				@include media-breakpoint-down(md){
+					row-gap: 30px;
+				}
 				.about-the-company-item-image{
 					border-radius: 10px;
 					box-shadow: 1px 1px 20px 10px lightgrey;
 					flex: 0 0 400px;
 					max-width: 400px;
 					overflow: hidden;
+					@include media-breakpoint-down(lg){
+						flex: 0 0 calc(50% - 25px);
+						max-width: calc(50% - 25px);
+					}
+					@include media-breakpoint-down(md){
+						display: none;
+						flex: 0 0 100%;
+						max-width: 100%;
+					}
 				}
 				.about-the-company-item-content{
 					align-items: flex-start;
 					display: flex;
-					flex: 0 0 400;
+					flex: 0 0 400px;
 					flex-direction: column;
 					max-width: 400px;
 					row-gap: 20px;
+					@include media-breakpoint-down(lg){
+						flex: 0 0 calc(50% - 25px);
+						max-width: calc(50% - 25px);
+						row-gap: 15px;
+					}
+					@include media-breakpoint-down(md){
+						flex: 0 0 100%;
+						max-width: 100%;
+					}
 					.about-the-company-item-content-icon{
 						max-width: 65px;
 					}
@@ -93,6 +117,9 @@
 			line-height: calc(56 / 46);
 			margin-bottom: 0;
 			text-align: center;
+			@include media-breakpoint-down(lg){
+				font-size: 32px;
+			}
 		}
 		.accordion{
 			display: flex;

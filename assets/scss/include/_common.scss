@@ -24,6 +24,9 @@ body{
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale;
+	&.mobile-menu-open{
+		overflow: hidden;
+	}
 }
 a,
 button{
@@ -47,6 +50,15 @@ button{
 	max-width: 1296px;
 	padding: 0 20px;
 	width: 100%;
+}
+
+@keyframes headerStickyAnimations {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .inner-banner{
@@ -76,6 +88,13 @@ button{
 			@include font-Jost-Bold;
 			line-height: calc(75 / 65);
 			margin-bottom: 0;
+			text-align: center;
+			@include media-breakpoint-down(lg){
+				font-size: 46px;
+			}
+			@include media-breakpoint-down(md){
+				font-size: 32px;
+			}
 		}
 		.list-unstyled{
 			gap: 22px;

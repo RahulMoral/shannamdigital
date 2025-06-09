@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>SHANNAM DIGITAL</title>
+        <title>SHANNAM DIGITAL | SEO</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&display=swap" />
@@ -234,6 +234,24 @@
             </header>
             <!-- Header -->
             <main class="site-main">
+                <section class="inner-banner jarallax">
+                    <img alt="parallax image" class="jarallax-img" src="assets/images/home/banner-image-shannamdigtial.jpg" />
+                    <div class="container">
+                        <div class="inner-banner-container">
+                            <h1>SEO Vancouver</h1>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center gap-3">
+                                <li>
+                                    <a href="javascript:void(0);">Home</a>
+                                </li>
+                                <li>
+                                    <i class="fa-light fa-angle-right"></i>
+                                </li>
+                                <li>seo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Hero Banner -->
             </main>
             <!-- Main -->
             <footer class="site-footer">
@@ -396,54 +414,5 @@
             <!-- Footer -->
         </div>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
-        <script>
-			// scroll to active sticky menu
-			window.addEventListener('scroll', function () {
-				const mainMenu = document.querySelector('.main-menu');
-				if (window.scrollY >= 140) {
-					mainMenu.classList.add('sticky-menu');
-				} else {
-					mainMenu.classList.remove('sticky-menu');
-				}
-			});
-			document.addEventListener('DOMContentLoaded', () => {
-				const mobileMenu = document.querySelector('.mobile-menu');
-
-				// Open mobile menu
-				document.querySelectorAll('.main-menu-bar').forEach(bar => {
-					bar.addEventListener('click', (e) => {
-						mobileMenu.classList.add('mobile-menu-active');
-						document.body.classList.add('mobile-menu-open');
-						e.stopPropagation(); // Prevent the document click listener from firing immediately
-					});
-				});
-
-				// Close mobile menu via close button
-				document.querySelectorAll('.mobile-menu-close-btn').forEach(btn => {
-					btn.addEventListener('click', (e) => {
-						const parentMenu = e.currentTarget.closest('.mobile-menu');
-						if (parentMenu) parentMenu.classList.remove('mobile-menu-active');
-						document.body.classList.remove('mobile-menu-open');
-						e.stopPropagation();
-					});
-				});
-
-				// Close when clicking outside the menu
-				document.addEventListener('click', (e) => {
-					const isClickInsideMenu = mobileMenu.contains(e.target);
-					const isClickOnMenuBar = e.target.closest('.main-menu-bar');
-					if (!isClickInsideMenu && !isClickOnMenuBar) {
-						mobileMenu.classList.remove('mobile-menu-active');
-						document.body.classList.remove('mobile-menu-open');
-					}
-				});
-			});
-        </script>
-        <script>
-			jarallax(document.querySelectorAll('.jarallax'), {
-				speed: 0.4,
-			});
-        </script>
     </body>
 </html>

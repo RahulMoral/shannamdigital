@@ -105,12 +105,18 @@
 			line-height: calc(56 / 46);
 			margin-bottom: 0;
 			text-align: center;
+			@include media-breakpoint-down(lg){
+				font-size: 32px;
+			}
 		}
 		.page-contact-form_form{
 			display: grid;
 			grid-column-gap: 24px;
 			grid-row-gap: 20px;
 			grid-template-columns: repeat(2, 1fr);
+			@include media-breakpoint-down(md){
+				grid-template-columns: 1fr;
+			}
 			.page-contact-form-group{
 				&.message{
 					grid-column: 1 / -1;
@@ -152,6 +158,9 @@
 					justify-content: center;
 					transition: all 0.3s ease-in-out 0s;
 					width: 200px;
+					@include media-breakpoint-down(md){
+						width: 100%;
+					}
 					&:hover,
 					&:focus{
 						background-color: #2A9D8F;

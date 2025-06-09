@@ -5,6 +5,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 130px;
+	@include media-breakpoint-down(lg){
+		padding-top: 100px;
+	}
 	.container{
 		display: flex;
 		flex-direction: column;
@@ -13,12 +16,28 @@
 	.main-footer-top{
 		display: flex;
 		justify-content: space-between;
+		@include media-breakpoint-down(lg){
+			display: grid;
+			grid-row-gap: 30px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include media-breakpoint-down(md){
+			grid-template-columns: 1fr;
+		}
 		.main-footer-top-contact-info{
 			display: flex;
 			flex: 0 0 26.33%;
 			flex-direction: column;
 			max-width: 26.33%;
 			row-gap: 20px;
+			@include media-breakpoint-down(xxl){
+				flex: 0 0 29.33%;
+				max-width: 29.33%;
+			}
+			@include media-breakpoint-down(lg){
+				max-width: 100%;
+				width: 71.33%;
+			}
 			.main-footer-top-contact-info-logo{
 				max-width: 186px;
 				a{
@@ -70,6 +89,14 @@
 			flex: 0 0 33.33%;
 			justify-content: space-between;
 			max-width: 33.33%;
+			@include media-breakpoint-down(lg){
+				max-width: 100%;
+				width: 100%;
+			}
+			@include media-breakpoint-down(md){
+				flex-direction: column;
+				row-gap: 30px;
+			}
 			.main-footer-top-menu-card{
 				display: flex;
 				flex-direction: column;
@@ -109,6 +136,19 @@
 			flex-direction: column;
 			max-width: 25.33%;
 			row-gap: 40px;
+			@include media-breakpoint-down(xxl){
+				flex: 0 0 30.33%;
+				max-width: 30.33%;
+			}
+			@include media-breakpoint-down(xl){
+				flex: 0 0 34.33%;
+				max-width: 34.33%;
+			}
+			@include media-breakpoint-down(lg){
+				grid-column: 1 / -1;
+				max-width: 100%;
+				width: 100%;
+			}
 			h5{
 				color: white;
 				font-size: 22px;
@@ -212,11 +252,18 @@
 		justify-content: space-between;
 		//margin-top: 72px;
 		padding: 18px 0;
+		@include media-breakpoint-down(md){
+			flex-direction: column-reverse;
+			row-gap: 10px;
+		}
 		p{
 			color: #B4B4B4;
 			font-size: 18px;
 			@include font-Jost-Medium;
 			margin-bottom: 0;
+			@include media-breakpoint-down(md){
+				text-align: center;
+			}
 			span{
 				color: #2A9D8F;
 			}
