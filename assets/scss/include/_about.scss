@@ -48,7 +48,7 @@
 				}
 				.about-the-company-item-image{
 					border-radius: 10px;
-					box-shadow: 1px 1px 20px 10px lightgrey;
+					//box-shadow: inset 1px 1px 20px 10px lightgrey;
 					flex: 0 0 400px;
 					max-width: 400px;
 					overflow: hidden;
@@ -60,6 +60,9 @@
 						display: none;
 						flex: 0 0 100%;
 						max-width: 100%;
+					}
+					img{
+						border-radius: 10px;
 					}
 				}
 				.about-the-company-item-content{
@@ -94,6 +97,22 @@
 						@include font-DM-Sans-Medium;
 						line-height: calc(1.85);
 						margin-bottom: 0;
+					}
+					.about-the-company-item-content-url{
+						align-items: center;
+						background-color: #2A9D8F;
+						border-radius: 4px;
+						color: white;
+						column-gap: 10px;
+						display: flex;
+						@include font-DM-Sans-Medium;
+						padding: 18px 30px;
+						transition: all 0.3s ease-in-out 0s;
+						&:hover,
+						&:focus{
+							background-color: #062E39;
+							color: white;
+						}
 					}
 				}
 				&:nth-child(2n+2){
