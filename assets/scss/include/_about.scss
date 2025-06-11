@@ -1,4 +1,65 @@
+.about-company{
+	padding: 100px 0;
+	.about-company-wrapper{
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		.about-company-header{
+			h2{
+				color: #062E39;
+				font-size: 46px;
+				@include font-Jost-Bold;
+				line-height: calc(56 / 46);
+				margin-bottom: 0;
+			}
+		}
+		.about-company-body{
+			display: grid;
+			grid-gap: 24px;
+			grid-template-columns: repeat(3, 1fr);
+			@include media-breakpoint-down(xl){
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@include media-breakpoint-down(md){
+				grid-template-columns: 1fr;
+			}
+			.about-company-item{
+				background-color: white;
+				border-radius: 2px;
+				box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.1);
+				display: flex;
+				flex-direction: column;
+				padding: 46px 30px 66px 30px;
+				row-gap: 24px;
+				@include media-breakpoint-down(xxl){
+					padding-left: 25px;
+					padding-right: 25px;
+				}
+				.about-company-item-icon{
+					border-radius: 5px;
+					max-width: 70px;
+					overflow: hidden;
+				}
+				h3{
+					color: #062E39;
+					font-size: 24px;
+					@include font-Jost-Bold;
+					line-height: calc(34 / 24);
+					margin-bottom: 0;
+				}
+				p{
+					color: #747474;
+					font-size: 16px;
+					@include font-DM-Sans-Regular;
+					line-height: calc(26 / 16);
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
 .about-the-company{
+	background-color: #F6F9FA;
 	padding: 100px 0;
 	.about-the-company-wrapper{
 		display: flex;
@@ -34,17 +95,22 @@
 			row-gap: 50px;
 			.about-the-company-item{
 				align-items: center;
-				border-bottom: 1px solid #B4B4B4;
 				column-gap: 150px;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
 				padding-bottom: 50px;
+				@include media-breakpoint-down(xxl){
+					column-gap: 70px;
+				}
 				@include media-breakpoint-down(lg){
 					column-gap: 50px;
 				}
 				@include media-breakpoint-down(md){
 					row-gap: 30px;
+				}
+				&:not(:last-of-type){
+					border-bottom: 1px solid #B4B4B4;
 				}
 				.about-the-company-item-image{
 					border-radius: 10px;
@@ -52,11 +118,11 @@
 					flex: 0 0 400px;
 					max-width: 400px;
 					overflow: hidden;
-					@include media-breakpoint-down(lg){
+					@include media-breakpoint-down(xl){
 						flex: 0 0 calc(50% - 25px);
 						max-width: calc(50% - 25px);
 					}
-					@include media-breakpoint-down(md){
+					@include media-breakpoint-down(lg){
 						display: none;
 						flex: 0 0 100%;
 						max-width: 100%;
@@ -68,21 +134,34 @@
 				.about-the-company-item-content{
 					align-items: flex-start;
 					display: flex;
-					flex: 0 0 400px;
+					flex: 0 0 calc(100% - (400px + 150px));
 					flex-direction: column;
-					max-width: 400px;
+					max-width: calc(100% - (400px + 150px));
 					row-gap: 20px;
-					@include media-breakpoint-down(lg){
+					@include media-breakpoint-down(xxl){
+						flex: 0 0 calc(100% - (400px + 70px));
+						max-width: calc(100% - (400px + 70px));
+					}
+					@include media-breakpoint-down(xl){
 						flex: 0 0 calc(50% - 25px);
 						max-width: calc(50% - 25px);
 						row-gap: 15px;
 					}
-					@include media-breakpoint-down(md){
+					@include media-breakpoint-down(lg){
 						flex: 0 0 100%;
 						max-width: 100%;
 					}
 					.about-the-company-item-content-icon{
 						max-width: 65px;
+					}
+					.about-the-company-item-content-sub-title{
+						background-color: #062E39;
+						border-radius: 3px;
+						color: white;
+						font-size: 15px;
+						@include font-Jost-Medium;
+						display: inline-flex;
+						padding: 5px 10px;
 					}
 					h3{
 						color: #062E39;
