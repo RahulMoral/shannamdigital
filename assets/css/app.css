@@ -14760,7 +14760,7 @@ button:focus {
   row-gap: 1rem;
 }
 .web-development-main .web-development-main-wrapper .web-development-main-items .web-development-main-item .web-development-main-item-icon {
-  max-width: 100px;
+  max-width: 80px;
 }
 @media (max-width: 767.98px) {
   .web-development-main .web-development-main-wrapper .web-development-main-items .web-development-main-item .web-development-main-item-icon {
@@ -14858,6 +14858,14 @@ button:focus {
 }
 @media (max-width: 599.98px) {
   .web-development-steps .web-development-steps-wrapper .web-development-steps-items {
+    grid-template-columns: 1fr;
+  }
+}
+.web-development-steps .web-development-steps-wrapper .web-development-steps-items.two-column-layout {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 599.98px) {
+  .web-development-steps .web-development-steps-wrapper .web-development-steps-items.two-column-layout {
     grid-template-columns: 1fr;
   }
 }

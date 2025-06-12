@@ -169,7 +169,7 @@
 				padding: 20px;
 				row-gap: 1rem;
 				.web-development-main-item-icon{
-					max-width: 100px;
+					max-width: 80px;
 					@include media-breakpoint-down(md){
 						max-width: 60px;
 					}
@@ -249,6 +249,12 @@
 			}
 			@media (max-width: 599.98px){
 				grid-template-columns: 1fr;
+			}
+			&.two-column-layout{
+				grid-template-columns: repeat(2, 1fr);
+				@media (max-width: 599.98px){
+					grid-template-columns: 1fr;
+				}
 			}
 			.web-development-steps-item{
 				background-color: white;
