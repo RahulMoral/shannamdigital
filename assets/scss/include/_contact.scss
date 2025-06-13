@@ -32,7 +32,7 @@
 					line-height: calc(26 / 16);
 					&.page-contact-info-item-content-label{
 						font-size: 24px;
-						@include font-Jost-Medium;
+						@include font-DM-Sans-Medium;
 						line-height: 1;
 						margin-bottom: 6px;
 					}
@@ -75,7 +75,7 @@
 			color: white;
 			display: flex;
 			font-size: 16px;
-			@include font-Jost-Medium;
+			@include font-DM-Sans-Medium;
 			height: 48px;
 			justify-content: center;
 			transition: all 0.3s ease-in-out 0s;
@@ -101,7 +101,7 @@
 		h2{
 			color: #062E39;
 			font-size: 46px;
-			@include font-Jost-Bold;
+			@include font-DM-Sans-Bold;
 			line-height: calc(56 / 46);
 			margin-bottom: 0;
 			text-align: center;
@@ -124,7 +124,7 @@
 				.page-contact-form-group-label{
 					color: #062E39;
 					font-size: 1rem;
-					@include font-Jost-SemiBold;
+					@include font-DM-Sans-SemiBold;
 					line-height: calc(26 / 16);
 					padding-bottom: 6px;
 				}
@@ -153,7 +153,7 @@
 					column-gap: 6px;
 					display: flex;
 					font-size: 16px;
-					@include font-Jost-SemiBold;
+					@include font-DM-Sans-SemiBold;
 					height: 48px;
 					justify-content: center;
 					transition: all 0.3s ease-in-out 0s;
@@ -191,7 +191,7 @@
 			h2{
 				color: #062E39;
 				font-size: 36px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(46 / 36);
 				margin-bottom: 0;
 				text-align: center;
@@ -208,7 +208,7 @@
 					.contact-form-group-label{
 						color: #062E39;
 						font-size: 16px;
-						@include font-Jost-Medium;
+						@include font-DM-Sans-Medium;
 						line-height: calc(26 / 16);
 						margin-bottom: 0;
 					}
@@ -237,7 +237,7 @@
 						column-gap: 6px;
 						display: flex;
 						font-size: 16px;
-						@include font-Jost-SemiBold;
+						@include font-DM-Sans-SemiBold;
 						height: 48px;
 						justify-content: center;
 						transition: linear 0.4s;
@@ -295,7 +295,7 @@
 					span{
 						color: #062E39;
 						font-size: 30px;
-						@include font-Jost-Bold;
+						@include font-DM-Sans-Bold;
 						line-height: calc(40 / 30);
 					}
 				}
@@ -313,7 +313,7 @@
 					.contact-info-item-content-address{
 						color: #2A9D8F;
 						font-size: 24px;
-						@include font-Jost-Medium;
+						@include font-DM-Sans-Medium;
 						line-height: calc(34 / 24);
 					}
 				}

@@ -36,7 +36,7 @@
 			h3{
 				color: #062E39;
 				font-size: 40px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(50 / 40);
 				margin-bottom: 0;
 				@include media-breakpoint-down(xl){
@@ -56,7 +56,7 @@
 			h4{
 				color: #062E39;
 				font-size: 24px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(34 / 24);
 				margin-bottom: 0;
 			}
@@ -121,7 +121,7 @@
 			h2{
 				color: #062E39;
 				font-size: 46px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(56 / 46);
 				margin-bottom: 0;
 				text-align: center;
@@ -177,7 +177,7 @@
 				h3{
 					color: #062E39;
 					font-size: 26px;
-					@include font-Jost-Bold;
+					@include font-DM-Sans-Bold;
 					line-height: calc(36 / 26);
 					margin-bottom: 0;
 					@include media-breakpoint-down(lg){
@@ -210,7 +210,7 @@
 			h2{
 				color: #062E39;
 				font-size: 46px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(56 / 46);
 				margin-bottom: 0;
 				text-align: center;
@@ -274,7 +274,7 @@
 					color: white;
 					display: flex;
 					font-size: 24px;
-					@include font-Jost-Bold;
+					@include font-DM-Sans-Bold;
 					height: 60px;
 					justify-content: center;
 					width: 60px;
@@ -282,7 +282,7 @@
 				h3{
 					color: #062E39;
 					font-size: 30px;
-					@include font-Jost-Bold;
+					@include font-DM-Sans-Bold;
 					line-height: calc(40 / 30);
 					margin-bottom: 0;
 				}

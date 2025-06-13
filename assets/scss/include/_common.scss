@@ -85,7 +85,7 @@ button{
 		h1{
 			color: white;
 			font-size: 65px;
-			@include font-Jost-Bold;
+			@include font-DM-Sans-Bold;
 			line-height: calc(75 / 65);
 			margin-bottom: 0;
 			text-align: center;
@@ -101,7 +101,7 @@ button{
 			li{
 				color: white;
 				font-size: 18px;
-				@include font-Jost-Medium;
+				@include font-DM-Sans-Medium;
 				line-height: calc(28 / 18);
 				a{
 					color: white;

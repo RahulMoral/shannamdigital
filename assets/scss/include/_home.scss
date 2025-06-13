@@ -292,7 +292,7 @@
 						color: white;
 						display: inline-flex;
 						font-size: 16px;
-						@include font-Jost-Medium;
+						@include font-DM-Sans-Medium;
 						justify-content: center;
 						padding: 9px 30px;
 						transition: linear 0.4s;
@@ -309,7 +309,7 @@
 					h4{
 						color: #062E39;
 						font-size: 24px;
-						@include font-Jost-Bold;
+						@include font-DM-Sans-Bold;
 						line-height: calc(34 / 24);
 						margin-bottom: 0;
 					}
@@ -339,7 +339,7 @@
 			h2{
 				color: #062E39;
 				font-size: 36px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(46 / 36);
 				margin-bottom: 0;
 				text-align: center;
@@ -437,7 +437,7 @@
 						span{
 							color: #062E39;
 							font-size: 30px;
-							@include font-Jost-Medium;
+							@include font-DM-Sans-Medium;
 							line-height: calc(40 / 30);
 						}
 					}
@@ -453,7 +453,7 @@
 					h3{
 						color: #062E39;
 						font-size: 30px;
-						@include font-Jost-Medium;
+						@include font-DM-Sans-Medium;
 						line-height: calc(40 / 30);
 						margin-bottom: 0;
 						@media (max-width: 424.98px){
@@ -485,7 +485,7 @@
 		h2{
 			color: white;
 			font-size: 46px;
-			@include font-Jost-Bold;
+			@include font-DM-Sans-Bold;
 			line-height: calc(56 / 46);
 			margin-bottom: 0;
 			text-align: center;
@@ -533,7 +533,7 @@
 			h2{
 				color: #062E39;
 				font-size: 52px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(52 / 42);
 				margin-bottom: 0;
 				text-align: center;
@@ -570,7 +570,7 @@
 			.home-growth-program-item-counter{
 				color: #2A9D8F;
 				font-size: 70px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(56 / 46);
 			}
 			.home-growth-program-item-text{
@@ -598,7 +598,7 @@
 			h2{
 				color: white;
 				font-size: 40px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(50 / 40);
 				margin-bottom: 0;
 				@include media-breakpoint-down(md){

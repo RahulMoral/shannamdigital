@@ -259,7 +259,7 @@
 		p{
 			color: #B4B4B4;
 			font-size: 18px;
-			@include font-Jost-Medium;
+			@include font-DM-Sans-Medium;
 			margin-bottom: 0;
 			@include media-breakpoint-down(md){
 				text-align: center;
@@ -305,7 +305,7 @@
 				.legal-menu-link{
 					color: rgba(255, 255, 255, 0.79);
 					font-size: 18px;
-					@include font-Jost-Medium;
+					@include font-DM-Sans-Medium;
 					transition: linear 0.3s;
 					&:hover,
 					&:focus{

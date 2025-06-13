@@ -8,7 +8,7 @@
 			h2{
 				color: #062E39;
 				font-size: 46px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(56 / 46);
 				margin-bottom: 0;
 			}
@@ -43,7 +43,7 @@
 				h3{
 					color: #062E39;
 					font-size: 24px;
-					@include font-Jost-Bold;
+					@include font-DM-Sans-Bold;
 					line-height: calc(34 / 24);
 					margin-bottom: 0;
 				}
@@ -73,7 +73,7 @@
 			h2{
 				color: #062E39;
 				font-size: 46px;
-				@include font-Jost-Bold;
+				@include font-DM-Sans-Bold;
 				line-height: calc(56 / 46);
 				margin-bottom: 0;
 			}
@@ -159,14 +159,14 @@
 						border-radius: 3px;
 						color: white;
 						font-size: 15px;
-						@include font-Jost-Medium;
+						@include font-DM-Sans-Medium;
 						display: inline-flex;
 						padding: 5px 10px;
 					}
 					h3{
 						color: #062E39;
 						font-size: 30px;
-						@include font-Jost-Bold;
+						@include font-DM-Sans-Bold;
 						line-height: calc(40 / 30);
 						margin-bottom: 0;
 					}
@@ -211,7 +211,7 @@
 		h2{
 			color: #062E39;
 			font-size: 46px;
-			@include font-Jost-Bold;
+			@include font-DM-Sans-Bold;
 			line-height: calc(56 / 46);
 			margin-bottom: 0;
 			text-align: center;

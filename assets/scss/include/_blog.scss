@@ -38,7 +38,7 @@
 					h2{
 						color: #062E39;
 						font-size: 35px;
-						@include font-Jost-Bold;
+						@include font-DM-Sans-Bold;
 						line-height: calc(45 / 35);
 						margin-bottom: 0;
 					}
@@ -56,7 +56,7 @@
 						column-gap: 10px;
 						display: flex;
 						font-size: 18px;
-						@include font-Jost-Bold;
+						@include font-DM-Sans-Bold;
 						padding: 19px 44px 19px 44px;
 						transition: linear 0.4s;
 						&:hover,
@@ -117,7 +117,7 @@
 	h3{
 		color: #062E39;
 		font-size: 24px;
-		@include font-Jost-Bold;
+		@include font-DM-Sans-Bold;
 		line-height: calc(34 / 24);
 		margin-bottom: 0;
 		padding-bottom: 10px;
@@ -164,7 +164,7 @@
 	h3{
 		color: #062E39;
 		font-size: 24px;
-		@include font-Jost-Bold;
+		@include font-DM-Sans-Bold;
 		line-height: calc(34 / 24);
 		margin-bottom: 0;
 		padding-bottom: 10px;
@@ -243,7 +243,7 @@
 	h3{
 		color: #062E39;
 		font-size: 24px;
-		@include font-Jost-Bold;
+		@include font-DM-Sans-Bold;
 		line-height: calc(34 / 24);
 		margin-bottom: 0;
 		padding-bottom: 10px;
@@ -271,7 +271,7 @@
 			color: #062E39;
 			display: inline-block;
 			font-size: 15px;
-			@include font-Jost-Medium;
+			@include font-DM-Sans-Medium;
 			line-height: calc(25 / 15);
 			padding: 10px 22px;
 			transition: all 0.3s ease-in-out 0s;
@@ -309,7 +309,7 @@
 				h2{
 					color: #062E39;
 					font-size: 35px;
-					@include font-Jost-Medium;
+					@include font-DM-Sans-Medium;
 					line-height: calc(45 / 35);
 					margin-bottom: 0;
 					margin-top: 12px;
@@ -325,7 +325,7 @@
 						column-gap: 8px;
 						display: flex;
 						font-size: 16px;
-						@include font-Jost-Regular;
+						@include font-DM-Sans-Regular;
 						line-height: calc(26 / 16);
 						i{
 							color: #2A9D8F;
@@ -350,7 +350,7 @@
 				h3{
 					color: #062E39;
 					font-size: 30px;
-					@include font-Jost-Medium;
+					@include font-DM-Sans-Medium;
 					line-height: calc(40 / 30);
 					margin: 0;
 				}
@@ -376,7 +376,7 @@
 							color: #062E39;
 							display: flex;
 							font-size: 18px;
-							@include font-Jost-Medium;
+							@include font-DM-Sans-Medium;
 							line-height: calc(28 / 18);
 							@include media-breakpoint-down(xxl){
 								font-size: 16px;
@@ -492,7 +492,7 @@
 					h3{
 						color: #18191D;
 						font-size: 30px;
-						@include font-Jost-Medium;
+						@include font-DM-Sans-Medium;
 						line-height: calc(40 / 30);
 						margin-bottom: 0;
 					}
@@ -536,7 +536,7 @@
 				.blog-single-content-comments-heading{
 					color: #062E39;
 					font-size: 30px;
-					@include font-Jost-Medium;
+					@include font-DM-Sans-Medium;
 					line-height: calc(40 / 30);
 					padding-bottom: 1rem;
 					position: relative;
@@ -565,14 +565,14 @@
 						h4{
 							color: #062E39;
 							font-size: 20px;
-							@include font-Jost-Medium;
+							@include font-DM-Sans-Medium;
 							line-height: calc(30 / 20);
 							margin-bottom: 0;
 						}
 						.blog-single-content-comments-item-date-time{
 							color: #747474;
 							font-size: 16px;
-							@include font-Jost-Regular;
+							@include font-DM-Sans-Regular;
 							line-height: calc(26 / 16);
 						}
 						p{
@@ -589,7 +589,7 @@
 							color: #2A9D8F;
 							display: flex;
 							font-size: 15px;
-							@include font-Jost-Medium;
+							@include font-DM-Sans-Medium;
 							line-height: calc(25 / 15);
 							padding: 8px 26px;
 							transition: linear 0.4s;
@@ -609,7 +609,7 @@
 				.blog-single-content-reply-heading{
 					color: #062E39;
 					font-size: 30px;
-					@include font-Jost-Medium;
+					@include font-DM-Sans-Medium;
 					line-height: calc(40 / 30);
 					padding-bottom: 1rem;
 					position: relative;
