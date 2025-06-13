@@ -1,0 +1,117 @@
+.get-a-proposal{
+	padding: 100px 0;
+	.get-a-proposal-wrapper{
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		.get-a-proposal-header{
+			display: flex;
+			flex-direction: column;
+			row-gap: 20px;
+			h2{
+				color: #062E39;
+				font-size: 36px;
+				@include font-DM-Sans-Bold;
+				line-height: calc(46 / 36);
+				margin-bottom: 0;
+			}
+			p{
+				color: #747474;
+				font-size: 18px;
+				@include font-DM-Sans-Regular;
+				line-height: calc(28 / 18);
+				margin-bottom: 0;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 76%;
+				width: 100%;
+				@include media-breakpoint-down(lg){
+					max-width: 100%;
+				}
+			}
+		}
+		.get-a-proposal-body{
+			.get-a-proposal-form{
+				display: flex;
+				flex-direction: column;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 600px;
+				row-gap: 1rem;
+				.get-a-proposal-form-group{
+					align-items: flex-start;
+					display: flex;
+					flex-direction: column;
+					row-gap: 10px;
+					.get-a-proposal-form-label{
+						color: #062E39;
+						font-size: 18px;
+						@include font-DM-Sans-Medium;
+						line-height: calc(28 / 18);
+						margin-bottom: 0;
+					}
+					.form-control{
+						border: 1px solid #B4B4B4;
+						border-radius: 4px;
+						box-shadow: none;
+						color: #062E39;
+						font-size: 16px;
+						@include font-DM-Sans-Regular;
+						height: 48px;
+						line-height: calc(26 / 16);
+						transition: linear 0.4s;
+						&:hover,
+						&:focus{
+							border-color: #2A9D8F;
+						}
+						&::-webkit-input-placeholder{
+							color: #747474;
+							opacity: 1;
+						}
+						&::-moz-placeholder{
+							color: #747474;
+							opacity: 1;
+						}
+						&:-moz-placeholder{
+							color: #747474;
+							opacity: 1;
+						}
+						&::-ms-input-placeholder{
+							color: #747474;
+							opacity: 1;
+						}
+						&:-ms-input-placeholder{
+							color: #747474;
+							opacity: 1;
+						}
+					}
+					textarea{
+						&.form-control{
+							height: auto;
+						}
+					}
+					.get-a-proposal-form-button{
+						background-color: #2A9D8F;
+						border: none;
+						border-radius: 5px;
+						color: white;
+						font-size: 16px;
+						@include font-DM-Sans-SemiBold;
+						height: 48px;
+						line-height: calc(26 / 16);
+						padding: 5px 20px;
+						transition: linear 0.4s;
+						@include media-breakpoint-down(md){
+							width: 100%;
+						}
+						&:hover,
+						&:focus{
+							background-color: #062E39;
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
