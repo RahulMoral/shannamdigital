@@ -12243,14 +12243,6 @@ button:focus {
   width: 100%;
 }
 
-@keyframes headerStickyAnimations {
-  0% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .inner-banner {
   position: relative;
 }
@@ -12311,6 +12303,14 @@ button:focus {
   color: #2A9D8F;
 }
 
+@keyframes headerStickyAnimations {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .mobile-menu {
   background-color: white;
   box-shadow: 10px 10px 42px -1px rgb(65, 63, 63);

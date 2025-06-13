@@ -51,16 +51,6 @@ button{
 	padding: 0 20px;
 	width: 100%;
 }
-
-@keyframes headerStickyAnimations {
-	0% {
-		transform: translateY(-100px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
-
 .inner-banner{
 	position: relative;
 	&:before{
@@ -113,5 +103,13 @@ button{
 				}
 			}
 		}
+	}
+}
+@keyframes headerStickyAnimations {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0);
 	}
 }
