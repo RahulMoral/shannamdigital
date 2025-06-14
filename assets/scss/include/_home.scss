@@ -308,16 +308,16 @@
 					row-gap: 20px;
 					h4{
 						color: #062E39;
-						font-size: 24px;
+						font-size: 26px;
 						@include font-DM-Sans-Bold;
-						line-height: calc(34 / 24);
+						line-height: calc(36 / 24);
 						margin-bottom: 0;
 					}
 					p{
 						color: #747474;
-						font-size: 16px;
+						font-size: 18px;
 						@include font-DM-Sans-Regular;
-						line-height: 1.5;
+						line-height: calc(28 / 18);
 						margin-bottom: 0;
 					}
 				}
@@ -534,15 +534,21 @@
 				color: #062E39;
 				font-size: 52px;
 				@include font-DM-Sans-Bold;
-				line-height: calc(52 / 42);
+				line-height: calc(62 / 52);
 				margin-bottom: 0;
 				text-align: center;
+				@include media-breakpoint-down(lg){
+					font-size: 46px;
+				}
+				@include media-breakpoint-down(md){
+					font-size: 36px;
+				}
 			}
 			p{
 				color: #909090;
-				font-size: 16px;
+				font-size: 18px;
 				@include font-DM-Sans-Regular;
-				line-height: calc(26 / 16);
+				line-height: calc(28 / 16);
 				margin-bottom: 0;
 				text-align: center;
 				&:not(:last-of-type){
