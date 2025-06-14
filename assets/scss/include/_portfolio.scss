@@ -30,16 +30,20 @@
 				row-gap: 10px;
 				h3{
 					color: #062E39;
-					font-size: 18px;
-					@include font-DM-Sans-Bold;
-					line-height: calc(28 / 18);
+					font-size: 20px;
+					@include font-Jost-Bold;
+					line-height: calc(30 / 20);
 					margin-bottom: 0;
 				}
 				p{
 					color: #747474;
-					font-size: 1rem;
+					font-size: 18px;
 					@include font-DM-Sans-Regular;
+					line-height: calc(28 / 18);
 					margin-bottom: 0;
+					@include media-breakpoint-down(xl){
+						font-size: 16px;
+					}
 				}
 			}
 		}

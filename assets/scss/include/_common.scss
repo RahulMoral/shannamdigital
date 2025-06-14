@@ -75,11 +75,11 @@ button{
 		h1{
 			color: white;
 			font-size: 65px;
-			@include font-DM-Sans-Bold;
+			@include font-Jost-Bold;
 			line-height: calc(75 / 65);
 			margin-bottom: 0;
 			text-align: center;
-			@include media-breakpoint-down(lg){
+			@include media-breakpoint-down(xl){
 				font-size: 46px;
 			}
 			@include media-breakpoint-down(md){
@@ -93,6 +93,9 @@ button{
 				font-size: 18px;
 				@include font-DM-Sans-Medium;
 				line-height: calc(28 / 18);
+				@include media-breakpoint-down(xl){
+					font-size: 16px;
+				}
 				a{
 					color: white;
 					transition: all 0.3s ease-in-out 0s;
@@ -111,5 +114,50 @@ button{
 	}
 	100% {
 		transform: translateY(0);
+	}
+}
+.scroll-to-top {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	background: white;
+	border: none;
+	border-radius: 50%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 1000;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	.arrow {
+		position: absolute;
+		font-size: 24px;
+		z-index: 1;
+		color: #2A9D8F;
+	}
+	.progress-ring {
+		transform: rotate(-90deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+		.ring-bg {
+			fill: none;
+			stroke: #B4B4B4;
+			stroke-width: 4;
+		}
+		.ring-fill {
+			fill: none;
+			stroke: #2A9D8F;
+			stroke-width: 4;
+			stroke-linecap: round;
+			stroke-dasharray: 164; /* 2πr (r = 26) */
+			stroke-dashoffset: 164;
+			transition: stroke-dashoffset 0.25s ease;
+		}
+	}
+	&.show {
+		display: flex;
 	}
 }

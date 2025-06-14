@@ -16,10 +16,13 @@
 			}
 			h2{
 				color: #062E39;
-				font-size: 36px;
+				font-size: 46px;
 				@include font-DM-Sans-Bold;
-				line-height: calc(46 / 36);
+				line-height: calc(56 / 46);
 				margin-bottom: 0;
+				@include media-breakpoint-down(xl){
+					font-size: 36px;
+				}
 			}
 			.privacy-policy-content{
 				display: flex;
@@ -32,7 +35,7 @@
 					h3{
 						color: #062E39;
 						font-size: 30px;
-						@include font-DM-Sans-Bold;
+						@include font-Jost-Bold;
 						line-height: calc(40 / 30);
 						margin-bottom: 0;
 					}
@@ -44,7 +47,7 @@
 							h4{
 								color: #747474;
 								font-size: 20px;
-								@include font-DM-Sans-Bold;
+								@include font-Jost-Bold;
 								line-height: calc(30 / 20);
 								margin-bottom: 0;
 							}
@@ -54,6 +57,9 @@
 								@include font-DM-Sans-Regular;
 								line-height: calc(28 / 18);
 								margin-bottom: 0;
+								@include media-breakpoint-down(xl){
+									font-size: 16px;
+								}
 								a{
 									color: #2A9D8F;
 								}
@@ -68,6 +74,9 @@
 									font-size: 18px;
 									@include font-DM-Sans-Regular;
 									line-height: calc(28 / 18);
+									@include media-breakpoint-down(xl){
+										font-size: 16px;
+									}
 									strong{
 										@include font-DM-Sans-Bold;
 									}

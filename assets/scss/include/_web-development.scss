@@ -35,12 +35,12 @@
 			row-gap: 20px;
 			h3{
 				color: #062E39;
-				font-size: 40px;
-				@include font-DM-Sans-Bold;
-				line-height: calc(50 / 40);
+				font-size: 46px;
+				@include font-Jost-Bold;
+				line-height: calc(56 / 46);
 				margin-bottom: 0;
 				@include media-breakpoint-down(xl){
-					font-size: 30px;
+					font-size: 36px;
 				}
 			}
 			p{
@@ -50,13 +50,13 @@
 				line-height: calc(28 / 18);
 				margin-bottom: 0;
 				@include media-breakpoint-down(xl){
-					font-size: 15px;
+					font-size: 16px;
 				}
 			}
 			h4{
 				color: #062E39;
 				font-size: 24px;
-				@include font-DM-Sans-Bold;
+				@include font-Jost-Bold;
 				line-height: calc(34 / 24);
 				margin-bottom: 0;
 			}
@@ -69,7 +69,7 @@
 					line-height: calc(28 / 18);
 					margin-bottom: 0;
 					@include media-breakpoint-down(xl){
-						font-size: 15px;
+						font-size: 16px;
 					}
 					i{
 						color: #2A9D8F;
@@ -83,7 +83,9 @@
 				color: white;
 				column-gap: 10px;
 				display: flex;
+				font-size: 16px;
 				@include font-DM-Sans-Medium;
+				line-height: calc(26 / 16);
 				padding: 18px 30px;
 				transition: all 0.3s ease-in-out 0s;
 				&:hover,
@@ -121,15 +123,12 @@
 			h2{
 				color: #062E39;
 				font-size: 46px;
-				@include font-DM-Sans-Bold;
+				@include font-Jost-Bold;
 				line-height: calc(56 / 46);
 				margin-bottom: 0;
 				text-align: center;
 				@include media-breakpoint-down(lg){
 					font-size: 36px;
-				}
-				@include media-breakpoint-down(md){
-					font-size: 28px;
 				}
 			}
 			p{
@@ -142,8 +141,10 @@
 				margin-right: auto;
 				max-width: 75%;
 				text-align: center;
-				@include media-breakpoint-down(lg){
+				@include media-breakpoint-down(xl){
 					font-size: 16px;
+				}
+				@include media-breakpoint-down(lg){
 					max-width: 100%;
 				}
 			}
@@ -177,7 +178,7 @@
 				h3{
 					color: #062E39;
 					font-size: 26px;
-					@include font-DM-Sans-Bold;
+					@include font-Jost-Bold;
 					line-height: calc(36 / 26);
 					margin-bottom: 0;
 					@include media-breakpoint-down(lg){
@@ -186,10 +187,13 @@
 				}
 				p{
 					color: #747474;
-					font-size: 16px;
+					font-size: 18px;
 					@include font-DM-Sans-Regular;
-					line-height: 1.5;
+					line-height: calc(28 / 18);
 					margin-bottom: 0;
+					@include media-breakpoint-down(xl){
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -210,15 +214,12 @@
 			h2{
 				color: #062E39;
 				font-size: 46px;
-				@include font-DM-Sans-Bold;
+				@include font-Jost-Bold;
 				line-height: calc(56 / 46);
 				margin-bottom: 0;
 				text-align: center;
-				@include media-breakpoint-down(lg){
+				@include media-breakpoint-down(xl){
 					font-size: 36px;
-				}
-				@include media-breakpoint-down(md){
-					font-size: 28px;
 				}
 			}
 			p{
@@ -231,8 +232,10 @@
 				margin-right: auto;
 				max-width: 75%;
 				text-align: center;
-				@include media-breakpoint-down(lg){
+				@include media-breakpoint-down(xl){
 					font-size: 16px;
+				}
+				@include media-breakpoint-down(lg){
 					max-width: 100%;
 				}
 			}
@@ -282,7 +285,7 @@
 				h3{
 					color: #062E39;
 					font-size: 30px;
-					@include font-DM-Sans-Bold;
+					@include font-Jost-Bold;
 					line-height: calc(40 / 30);
 					margin-bottom: 0;
 				}
@@ -290,8 +293,11 @@
 					color: #747474;
 					font-size: 18px;
 					@include font-DM-Sans-Regular;
-					line-height: calc(28 / 16);
+					line-height: calc(28 / 18);
 					margin-bottom: 0;
+					@include media-breakpoint-down(xl){
+						font-size: 16px;
+					}
 				}
 			}
 		}

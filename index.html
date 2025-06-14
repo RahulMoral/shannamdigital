@@ -299,7 +299,7 @@
                                 <img alt="#1 Digital Marketing Agency in Vancouver" class="img-fluid d-block" src="assets/images/home/featured-image-01.jpg" />
                             </div>
                             <div class="home-about-content">
-                                <h3 class="wow img-custom-anim-top">#1 Digital Marketing Agency in Vancouver</h3>
+                                <h2 class="wow img-custom-anim-top">#1 Digital Marketing Agency in Vancouver</h2>
                                 <p class="wow img-custom-anim-right">Welcome to Shannam Digital Inc., the best digital marketing agency in Vancouver! We are not your average agency; we're all about making a real impact and helping businesses like yours thrive in the digital world and dominate the competition. We believe every business, no matter its size or industry, deserves a chance to shine online. We want to be your trusted partner, empowering you to conquer the digital realm and achieve your wildest business dreams!</p>
                                 <ul class="list-unstyled d-flex flex-column">
                                     <li class="d-flex align-items-start wow img-custom-anim-right">
@@ -771,6 +771,17 @@
                 </section>
             </footer>
             <!-- Footer -->
+            <!-- Scroll to top button -->
+            <button id="scrollToTop" class="scroll-to-top" title="Go to top">
+                <span class="arrow">
+                    <i class="fa-thin fa-up-long"></i>
+                </span>
+                <svg class="progress-ring" width="60" height="60">
+                    <circle class="ring-bg" cx="30" cy="30" r="26" />
+                    <circle class="ring-fill" cx="30" cy="30" r="26" />
+                </svg>
+            </button>
+            <!-- Scroll to top button end -->
         </div>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
@@ -816,6 +827,27 @@
 						document.body.classList.remove('mobile-menu-open');
 					}
 				});
+			});
+			// Scroll top button
+			const btn = document.getElementById("scrollToTop");
+			const ring = document.querySelector(".ring-fill");
+			const radius = 26;
+			const circumference = 2 * Math.PI * radius;
+
+			ring.style.strokeDasharray = circumference;
+
+			window.addEventListener("scroll", () => {
+				const scrollTop = window.scrollY;
+				const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+				const scrollFraction = scrollTop / scrollHeight;
+
+				ring.style.strokeDashoffset = circumference - scrollFraction * circumference;
+
+				btn.classList.toggle("show", scrollTop > 200);
+			});
+
+			btn.addEventListener("click", () => {
+				window.scrollTo({ top: 0, behavior: "smooth" });
 			});
         </script>
         <script>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>SHANNAM DIGITAL</title>
+        <title>SHANNAM DIGITAL | Header & Footer</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&display=swap" />
@@ -395,6 +395,17 @@
                 </section>
             </footer>
             <!-- Footer -->
+            <!-- Scroll to top button -->
+            <button id="scrollToTop" class="scroll-to-top" title="Go to top">
+                <span class="arrow">
+                    <i class="fa-thin fa-up-long"></i>
+                </span>
+                <svg class="progress-ring" width="60" height="60">
+                    <circle class="ring-bg" cx="30" cy="30" r="26" />
+                    <circle class="ring-fill" cx="30" cy="30" r="26" />
+                </svg>
+            </button>
+            <!-- Scroll to top button end -->
         </div>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
@@ -440,6 +451,27 @@
 						document.body.classList.remove('mobile-menu-open');
 					}
 				});
+			});
+			// Scroll top button
+			const btn = document.getElementById("scrollToTop");
+			const ring = document.querySelector(".ring-fill");
+			const radius = 26;
+			const circumference = 2 * Math.PI * radius;
+
+			ring.style.strokeDasharray = circumference;
+
+			window.addEventListener("scroll", () => {
+				const scrollTop = window.scrollY;
+				const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+				const scrollFraction = scrollTop / scrollHeight;
+
+				ring.style.strokeDashoffset = circumference - scrollFraction * circumference;
+
+				btn.classList.toggle("show", scrollTop > 200);
+			});
+
+			btn.addEventListener("click", () => {
+				window.scrollTo({ top: 0, behavior: "smooth" });
 			});
         </script>
         <script>

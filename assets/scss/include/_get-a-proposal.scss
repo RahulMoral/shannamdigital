@@ -10,10 +10,13 @@
 			row-gap: 20px;
 			h2{
 				color: #062E39;
-				font-size: 36px;
-				@include font-DM-Sans-Bold;
-				line-height: calc(46 / 36);
+				font-size: 46px;
+				@include font-Jost-Bold;
+				line-height: calc(56 / 46);
 				margin-bottom: 0;
+				@include media-breakpoint-down(xl){
+					font-size: 36px;
+				}
 			}
 			p{
 				color: #747474;
@@ -25,6 +28,9 @@
 				margin-right: auto;
 				max-width: 76%;
 				width: 100%;
+				@include media-breakpoint-down(xl){
+					font-size: 16px;
+				}
 				@include media-breakpoint-down(lg){
 					max-width: 100%;
 				}
@@ -49,6 +55,9 @@
 						@include font-DM-Sans-Medium;
 						line-height: calc(28 / 18);
 						margin-bottom: 0;
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 					}
 					.form-control{
 						border: 1px solid #B4B4B4;

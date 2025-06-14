@@ -30,24 +30,33 @@
 						margin-bottom: 0;
 						li{
 							color: #062E39;
-							font-size: 16px;
+							font-size: 18px;
 							@include font-DM-Sans-Regular;
-							line-height: 1.5;
+							line-height: calc(28 / 18);
+							@include media-breakpoint-down(xl){
+								font-size: 16px;
+							}
 						}
 					}
 					h2{
 						color: #062E39;
-						font-size: 35px;
-						@include font-DM-Sans-Bold;
-						line-height: calc(45 / 35);
+						font-size: 46px;
+						@include font-Jost-Bold;
+						line-height: calc(56 / 46);
 						margin-bottom: 0;
+						@include media-breakpoint-down(xl){
+							font-size: 36px;
+						}
 					}
 					p{
 						color: #747474;
-						font-size: 16px;
+						font-size: 18px;
 						@include font-DM-Sans-Regular;
-						line-height: calc(26 / 16);
+						line-height: calc(28 / 18);
 						margin-bottom: 0;
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 					}
 					.blogs-content-item-link{
 						align-items: center;
@@ -55,8 +64,8 @@
 						color: white;
 						column-gap: 10px;
 						display: flex;
-						font-size: 18px;
-						@include font-DM-Sans-Bold;
+						font-size: 16px;
+						@include font-DM-Sans-SemiBold;
 						padding: 19px 44px 19px 44px;
 						transition: linear 0.4s;
 						&:hover,
@@ -77,12 +86,16 @@
 						border-radius: 50%;
 						color: #C8C8C8;
 						display: flex;
-						font-size: 20px;
+						font-size: 18px;
 						@include font-DM-Sans-SemiBold;
 						height: 41px;
 						justify-content: center;
+						line-height: calc(28 / 18);
 						transition: linear 0.3s;
 						width: 41px;
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 						&:hover,
 						&:focus{
 							background-color: #2A9D8F;
@@ -117,19 +130,19 @@
 	h3{
 		color: #062E39;
 		font-size: 24px;
-		@include font-DM-Sans-Bold;
+		@include font-Jost-Bold;
 		line-height: calc(34 / 24);
 		margin-bottom: 0;
-		padding-bottom: 10px;
+		padding-bottom: 13px;
 		position: relative;
 		&:after{
 			background-color: #2A9D8F;
 			border-radius: 2px;
+			bottom: 0;
 			content: '';
 			height: 3px;
 			left: 0;
 			position: absolute;
-			top: 100%;
 			width: 70px;
 		}
 	}
@@ -142,11 +155,15 @@
 			border-bottom: 1px solid black;
 			color: #062E39;
 			display: flex;
-			font-size: 16px;
+			font-size: 18px;
 			@include font-DM-Sans-SemiBold;
 			justify-content: space-between;
+			line-height: calc(28 / 18);
 			padding: 0 0 1rem;
 			transition: all 0.3s ease-in-out 0s;
+			@include media-breakpoint-down(xl){
+				font-size: 16px;
+			}
 			&:hover,
 			&:focus{
 				color: #2A9D8F;
@@ -164,19 +181,19 @@
 	h3{
 		color: #062E39;
 		font-size: 24px;
-		@include font-DM-Sans-Bold;
+		@include font-Jost-Bold;
 		line-height: calc(34 / 24);
 		margin-bottom: 0;
-		padding-bottom: 10px;
+		padding-bottom: 13px;
 		position: relative;
 		&:after{
 			background-color: #2A9D8F;
 			border-radius: 2px;
+			bottom: 0;
 			content: '';
 			height: 3px;
 			left: 0;
 			position: absolute;
-			top: 100%;
 			width: 70px;
 		}
 	}
@@ -202,9 +219,12 @@
 					display: flex;
 					.blogs-sidebar-popular-posts-item-content-info-item{
 						color: #747474;
-						font-size: 16px;
+						font-size: 18px;
 						@include font-DM-Sans-Regular;
-						line-height: calc(26 / 16);
+						line-height: calc(28 / 18);
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 						i{
 							color: #2A9D8F;
 						}
@@ -220,9 +240,12 @@
 						font-size: 18px;
 						@include font-DM-Sans-SemiBold;
 						overflow: hidden;
-						line-height: 24px;
-						max-height: 48px;
+						line-height: calc(28 / 18);
+						max-height: 56px;
 						transition: all 0.3s ease-in-out 0s;
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 						&:hover,
 						&:focus{
 							color: #2A9D8F;
@@ -243,19 +266,19 @@
 	h3{
 		color: #062E39;
 		font-size: 24px;
-		@include font-DM-Sans-Bold;
+		@include font-Jost-Bold;
 		line-height: calc(34 / 24);
 		margin-bottom: 0;
-		padding-bottom: 10px;
+		padding-bottom: 13px;
 		position: relative;
 		&:after{
 			background-color: #2A9D8F;
 			border-radius: 2px;
+			bottom: 0;
 			content: '';
 			height: 3px;
 			left: 0;
 			position: absolute;
-			top: 100%;
 			width: 70px;
 		}
 	}
@@ -270,11 +293,14 @@
 			border-radius: 4px;
 			color: #062E39;
 			display: inline-block;
-			font-size: 15px;
+			font-size: 18px;
 			@include font-DM-Sans-Medium;
-			line-height: calc(25 / 15);
+			line-height: calc(28 / 18);
 			padding: 10px 22px;
 			transition: all 0.3s ease-in-out 0s;
+			@include media-breakpoint-down(xl){
+				font-size: 16px;
+			}
 			&:hover,
 			&:focus{
 				background-color: #2A9D8F;
@@ -308,9 +334,9 @@
 				row-gap: 20px;
 				h2{
 					color: #062E39;
-					font-size: 35px;
-					@include font-DM-Sans-Medium;
-					line-height: calc(45 / 35);
+					font-size: 36px;
+					@include font-Jost-Medium;
+					line-height: calc(46 / 36);
 					margin-bottom: 0;
 					margin-top: 12px;
 				}
@@ -324,9 +350,12 @@
 						align-items: center;
 						column-gap: 8px;
 						display: flex;
-						font-size: 16px;
+						font-size: 18px;
 						@include font-DM-Sans-Regular;
-						line-height: calc(26 / 16);
+						line-height: calc(28 / 18);
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 						i{
 							color: #2A9D8F;
 						}
@@ -342,15 +371,18 @@
 				row-gap: 30px;
 				p{
 					color: #747474;
-					font-size: 16px;
+					font-size: 18px;
 					@include font-DM-Sans-Regular;
-					line-height: calc(26 / 16);
+					line-height: calc(28 / 18);
 					margin-bottom: 0;
+					@include media-breakpoint-down(xl){
+						font-size: 16px;
+					}
 				}
 				h3{
 					color: #062E39;
 					font-size: 30px;
-					@include font-DM-Sans-Medium;
+					@include font-Jost-Medium;
 					line-height: calc(40 / 30);
 					margin: 0;
 				}
@@ -373,14 +405,13 @@
 						.blog-single-content-image-link-list-item{
 							align-items: center;
 							column-gap: 10px;
-							color: #062E39;
+							color: #747474;
 							display: flex;
 							font-size: 18px;
 							@include font-DM-Sans-Medium;
 							line-height: calc(28 / 18);
-							@include media-breakpoint-down(xxl){
+							@include media-breakpoint-down(xl){
 								font-size: 16px;
-								line-height: calc(26 /16);
 							}
 						}
 					}
@@ -422,7 +453,7 @@
 					.blog-single-content-tags-title{
 						color: #18191D;
 						font-size: 24px;
-						@include font-DM-Sans-Medium;
+						@include font-Jost-Medium;
 						line-height: calc(34 / 24);
 					}
 					.blog-single-content-tags-items{
@@ -434,11 +465,14 @@
 							background-color: #F8F8F8;
 							border-radius: 4px;
 							color: #062E39;
-							font-size: 17px;
+							font-size: 18px;
 							@include font-DM-Sans-Medium;
-							line-height: calc(27 / 17);
+							line-height: calc(28 / 18);
 							padding: 9px 21px;
 							transition: linear 0.4s;
+							@include media-breakpoint-down(xl){
+								font-size: 16px;
+							}
 							&:hover,
 							&:focus{
 								background-color: #2A9D8F;
@@ -459,9 +493,10 @@
 						color: #2A9D8F;
 						display: flex;
 						flex: 0 0 40px;
-						font-size: 16px;
+						font-size: 18px;
 						height: 40px;
 						justify-content: center;
+						line-height: calc(28 / 18);
 						max-width: 40px;
 						transition: linear 0.4s;
 						&:hover,
@@ -492,16 +527,19 @@
 					h3{
 						color: #18191D;
 						font-size: 30px;
-						@include font-DM-Sans-Medium;
+						@include font-Jost-Medium;
 						line-height: calc(40 / 30);
 						margin-bottom: 0;
 					}
 					p{
 						color: #747474;
-						font-size: 16px;
+						font-size: 18px;
 						@include font-DM-Sans-Regular;
-						line-height: calc(26 / 16);
+						line-height: calc(28 / 18);
 						margin-bottom: 0;
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 					}
 					.blog-single-content-about-writer-social-share{
 						align-items: center;
@@ -536,7 +574,7 @@
 				.blog-single-content-comments-heading{
 					color: #062E39;
 					font-size: 30px;
-					@include font-DM-Sans-Medium;
+					@include font-Jost-Medium;
 					line-height: calc(40 / 30);
 					padding-bottom: 1rem;
 					position: relative;
@@ -564,23 +602,29 @@
 						}
 						h4{
 							color: #062E39;
-							font-size: 20px;
-							@include font-DM-Sans-Medium;
-							line-height: calc(30 / 20);
+							font-size: 24px;
+							@include font-Jost-Medium;
+							line-height: calc(34 / 24);
 							margin-bottom: 0;
 						}
 						.blog-single-content-comments-item-date-time{
 							color: #747474;
-							font-size: 16px;
+							font-size: 18px;
 							@include font-DM-Sans-Regular;
-							line-height: calc(26 / 16);
+							line-height: calc(28 / 18);
+							@include media-breakpoint-down(xl){
+								font-size: 16px;
+							}
 						}
 						p{
 							color: #747474;
-							font-size: 16px;
+							font-size: 18px;
 							@include font-DM-Sans-Regular;
-							line-height: calc(26 / 16);
+							line-height: calc(28 / 18);
 							margin-bottom: 10px;
+							@include media-breakpoint-down(xl){
+								font-size: 16px;
+							}
 						}
 						a{
 							align-items: center;
@@ -588,11 +632,14 @@
 							border-radius: 3px;
 							color: #2A9D8F;
 							display: flex;
-							font-size: 15px;
+							font-size: 18px;
 							@include font-DM-Sans-Medium;
-							line-height: calc(25 / 15);
+							line-height: calc(28 / 18);
 							padding: 8px 26px;
 							transition: linear 0.4s;
+							@include media-breakpoint-down(xl){
+								font-size: 16px;
+							}
 							&:hover,
 							&:focus{
 								background-color: #062E39;
@@ -609,7 +656,7 @@
 				.blog-single-content-reply-heading{
 					color: #062E39;
 					font-size: 30px;
-					@include font-DM-Sans-Medium;
+					@include font-Jost-Medium;
 					line-height: calc(40 / 30);
 					padding-bottom: 1rem;
 					position: relative;
@@ -677,10 +724,13 @@
 							color: white;
 							column-gap: 5px;
 							display: flex;
-							font-size: 16px;
-							@include font-DM-Sans-Regular;
+							font-size: 18px;
+							@include font-DM-Sans-SemiBold;
 							padding: 17px 40px 17px 30px;
 							transition: linear 0.4s;
+							@include media-breakpoint-down(xl){
+								font-size: 16px;
+							}
 							&:hover,
 							&:focus{
 								background-color: #062E39;

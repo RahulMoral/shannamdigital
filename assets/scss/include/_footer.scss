@@ -104,7 +104,7 @@
 				h5{
 					color: white;
 					font-size: 22px;
-					@include font-DM-Sans-Medium;
+					@include font-Jost-Medium;
 					line-height: calc(32 / 22);
 					margin-bottom: 0;
 				}
@@ -152,7 +152,7 @@
 			h5{
 				color: white;
 				font-size: 22px;
-				@include font-DM-Sans-Medium;
+				@include font-Jost-Medium;
 				line-height: calc(32 / 22);
 				margin-bottom: 0;
 			}
@@ -211,7 +211,7 @@
 					}
 					.main-footer-top-news-letter-agreement-text{
 						color: #B4B4B4;
-						font-size: 15px;
+						font-size: 16px;
 						@include font-DM-Sans-Medium;
 					}
 					&.is-checked{
@@ -258,8 +258,9 @@
 		}
 		p{
 			color: #B4B4B4;
-			font-size: 18px;
-			@include font-DM-Sans-Medium;
+			font-size: 16px;
+			@include font-Jost-Medium;
+			line-height: calc(26 / 16);
 			margin-bottom: 0;
 			@include media-breakpoint-down(md){
 				text-align: center;
@@ -278,10 +279,10 @@
 					align-items: center;
 					background-color: rgba(251, 251, 253, 0.08);
 					border-radius: 50%;
-					color: rgba(255, 255, 255, 0.61);
+					color: white;
 					display: inline-flex;
 					flex: 0 0 38px;
-					font-size: 13px;
+					font-size: 16px;
 					height: 38px;
 					justify-content: center;
 					max-width: 38px;
@@ -304,8 +305,9 @@
 			.legal-menu-item{
 				.legal-menu-link{
 					color: rgba(255, 255, 255, 0.79);
-					font-size: 18px;
-					@include font-DM-Sans-Medium;
+					font-size: 16px;
+					@include font-Jost-Medium;
+					line-height: calc(26 / 16);
 					transition: linear 0.3s;
 					&:hover,
 					&:focus{

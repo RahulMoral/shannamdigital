@@ -8,9 +8,12 @@
 			h2{
 				color: #062E39;
 				font-size: 46px;
-				@include font-DM-Sans-Bold;
+				@include font-Jost-Bold;
 				line-height: calc(56 / 46);
 				margin-bottom: 0;
+				@include media-breakpoint-down(xl){
+					font-size: 36px;
+				}
 			}
 		}
 		.about-company-body{
@@ -43,16 +46,19 @@
 				h3{
 					color: #062E39;
 					font-size: 24px;
-					@include font-DM-Sans-Bold;
+					@include font-Jost-Bold;
 					line-height: calc(34 / 24);
 					margin-bottom: 0;
 				}
 				p{
 					color: #747474;
-					font-size: 16px;
+					font-size: 18px;
 					@include font-DM-Sans-Regular;
-					line-height: calc(26 / 16);
+					line-height: calc(28 / 18);
 					margin-bottom: 0;
+					@include media-breakpoint-down(xl){
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -73,20 +79,29 @@
 			h2{
 				color: #062E39;
 				font-size: 46px;
-				@include font-DM-Sans-Bold;
+				@include font-Jost-Bold;
 				line-height: calc(56 / 46);
 				margin-bottom: 0;
+				@include media-breakpoint-down(xl){
+					font-size: 36px;
+				}
 			}
 			p{
 				color: #062E39;
-				font-size: 20px;
+				font-size: 18px;
 				@include font-DM-Sans-Medium;
-				line-height: calc(26 / 16);
+				line-height: calc(28 / 18);
 				margin-bottom: 0;
 				margin-left: auto;
 				margin-right: auto;
 				max-width: 700px;
 				text-align: center;
+				@include media-breakpoint-down(xl){
+					font-size: 16px;
+				}
+				@include media-breakpoint-down(lg){
+					max-width: 100%;
+				}
 			}
 		}
 		.about-the-company-body{
@@ -158,24 +173,27 @@
 						background-color: #062E39;
 						border-radius: 3px;
 						color: white;
-						font-size: 15px;
+						font-size: 16px;
 						@include font-DM-Sans-Medium;
 						display: inline-flex;
 						padding: 5px 10px;
 					}
 					h3{
 						color: #062E39;
-						font-size: 30px;
-						@include font-DM-Sans-Bold;
-						line-height: calc(40 / 30);
+						font-size: 36px;
+						@include font-Jost-Bold;
+						line-height: calc(46 / 36);
 						margin-bottom: 0;
 					}
 					p{
 						color: #747474;
-						font-size: 14px;
+						font-size: 18px;
 						@include font-DM-Sans-Medium;
-						line-height: calc(1.85);
+						line-height: calc(28 / 18);
 						margin-bottom: 0;
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 					}
 					.about-the-company-item-content-url{
 						align-items: center;
@@ -184,6 +202,7 @@
 						color: white;
 						column-gap: 10px;
 						display: flex;
+						font-size: 16px;
 						@include font-DM-Sans-Medium;
 						padding: 18px 30px;
 						transition: all 0.3s ease-in-out 0s;
@@ -211,12 +230,12 @@
 		h2{
 			color: #062E39;
 			font-size: 46px;
-			@include font-DM-Sans-Bold;
+			@include font-Jost-Bold;
 			line-height: calc(56 / 46);
 			margin-bottom: 0;
 			text-align: center;
-			@include media-breakpoint-down(lg){
-				font-size: 32px;
+			@include media-breakpoint-down(xl){
+				font-size: 36px;
 			}
 		}
 		.accordion{
@@ -232,8 +251,11 @@
 						box-shadow: none;
 						color: #062E39;
 						font-size: 18px;
-						@include font-DM-Sans-SemiBold;
+						@include font-Jost-SemiBold;
 						padding: 1rem;
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 						&[aria-expanded="true"]{
 							color: #2A9D8F;
 						}
@@ -242,8 +264,14 @@
 				.accordion-body{
 					padding: 0 1rem 1rem;
 					p{
-						color: #062E39;
+						color: #747474;
+						font-size: 18px;
+						@include font-DM-Sans-Regular;
+						line-height: calc(28 / 18);
 						margin-bottom: 0;
+						@include media-breakpoint-down(xl){
+							font-size: 16px;
+						}
 						&:not(:last-of-type){
 							margin-bottom: 1rem;
 						}
