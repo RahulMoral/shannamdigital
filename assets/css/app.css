@@ -13854,7 +13854,7 @@ button:focus {
 }
 .home-growth-program .home-growth-program-wrapper .home-growth-program-header h2, .home-growth-program .home-growth-program-wrapper .home-growth-program-header .h2 {
   color: #062E39;
-  font-size: 52px;
+  font-size: 46px;
   font-family: "Jost", sans-serif;
   font-weight: 700;
   line-height: 1.1923076923;
@@ -13862,11 +13862,6 @@ button:focus {
   text-align: center;
 }
 @media (max-width: 1199.98px) {
-  .home-growth-program .home-growth-program-wrapper .home-growth-program-header h2, .home-growth-program .home-growth-program-wrapper .home-growth-program-header .h2 {
-    font-size: 46px;
-  }
-}
-@media (max-width: 991.98px) {
   .home-growth-program .home-growth-program-wrapper .home-growth-program-header h2, .home-growth-program .home-growth-program-wrapper .home-growth-program-header .h2 {
     font-size: 36px;
   }

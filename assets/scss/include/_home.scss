@@ -578,15 +578,12 @@
 			row-gap: 1rem;
 			h2{
 				color: #062E39;
-				font-size: 52px;
+				font-size: 46px;
 				@include font-Jost-Bold;
 				line-height: calc(62 / 52);
 				margin-bottom: 0;
 				text-align: center;
 				@include media-breakpoint-down(xl){
-					font-size: 46px;
-				}
-				@include media-breakpoint-down(lg){
 					font-size: 36px;
 				}
 			}
