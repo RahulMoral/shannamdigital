@@ -14625,12 +14625,7 @@ button:focus {
 .portfolio .portfolio-wrapper {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 1399.98px) {
-  .portfolio .portfolio-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 991.98px) {
   .portfolio .portfolio-wrapper {
